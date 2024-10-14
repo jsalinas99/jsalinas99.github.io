@@ -46,16 +46,33 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: "AnadaBlackPeronalUseRegular";
+  src: url(AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+}
+
+@font-face {
+  font-family: "MouncheraDemo";
+  src: url(MouncheraDemo-Yz6OO.ttf);
+}
 
 h1 {
   font-size: 2.5rem;
   text-align: center;
   letter-spacing: 3px;
+  font-family: AnadaBlackPeronalUseRegular;
 }
 
 h2 {
   font-size: 2.5em;
   letter-spacing: 1.5px;
+  font-family: MouncheraDemo;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
 }
 
 a:active {
@@ -66,12 +83,59 @@ a:hover, a:focus {
   color: #a34838;
   text-decoration: none;
   outline: none;
+  
 }
 
 a:link {
-  color: #db3d21;
+  color: #ce543f;
+  font-size: 1.6rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 5.5;
+  text-align: center;
+  font-size: 2.0rem;
+  border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
 }
