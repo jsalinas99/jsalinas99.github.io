@@ -8,7 +8,7 @@ const overlay = document.querySelector('.overlay');
 const imgArray = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg']
 
 /* TODO: Declaring the alternative text for each image file */
-const altText = ['Closeup of a human eye', 'Rock that looks like a wave', 'White and purple flowers(pansies)', 'Egyption Drawings in a pharao tomb', 'Moth on a leaf']
+const altText = ['Closeup of a human eye', 'Rock that looks like a wave', 'White and purple flowers(pansies)', 'Egyptian Drawings in a pharao tomb', 'Moth on a leaf']
 
 /* Looping through images */
 for (let i = 0; i < imgArray.length; i++) {
